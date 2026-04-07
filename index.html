@@ -3,26 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="深圳市英能聚科技有限公司 - 专注储能系统、BMS 电池管理系统、EMS 能量管理系统研发与生产">
-    <meta name="keywords" content="储能系统，BMS,EMS，电池管理，能源管理，英能聚科技">
+    <meta name="description" content="深圳市英能聚科技有限公司 - 专业储能系统解决方案提供商，主营 BMS、EMS、能源管理平台">
+    <meta name="keywords" content="储能系统，BMS,EMS，电池管理，能源管理，英能聚科技，储能柜">
     <title>深圳市英能聚科技有限公司 - 储能系统解决方案专家</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>📧 elgyc@elgyc.com</span>
+                <span class="divider">|</span>
+                <span>📍 深圳市</span>
+            </div>
+            <div class="top-bar-right">
+                <span>欢迎咨询洽谈</span>
+            </div>
+        </div>
+    </div>
+
     <!-- 导航栏 -->
     <header class="navbar-fixed">
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
                     <span class="logo-text">英能聚科技</span>
+                    <span class="logo-subtitle">Acrel-like Energy Tech</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#home">首页</a></li>
+                    <li><a href="#home" class="active">首页</a></li>
                     <li><a href="#products">产品中心</a></li>
                     <li><a href="#solutions">解决方案</a></li>
+                    <li><a href="#cases">工程案例</a></li>
                     <li><a href="#about">关于我们</a></li>
                     <li><a href="#contact">联系我们</a></li>
                 </ul>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索产品...">
+                        <button type="submit">🔍</button>
+                    </div>
+                    <div class="contact-phone">
+                        <span class="phone-label">咨询热线</span>
+                        <span class="phone-number">400-xxx-xxxx</span>
+                    </div>
+                </div>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -32,187 +58,264 @@
         </nav>
     </header>
 
-    <!-- 首页轮播区 -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>储能系统解决方案专家</h1>
-            <p>专注 BMS、EMS 与能源管理平台研发，为工商业储能提供智能化、安全化的整体解决方案</p>
-            <div class="hero-buttons">
-                <a href="#products" class="btn btn-primary">查看产品</a>
-                <a href="#contact" class="btn btn-secondary">立即咨询</a>
+    <!-- 首页轮播图 -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>AcrelEMS 智慧能源管理系统</h1>
+                    <p>市电、分布式光伏、储能、充电桩协调有序运行，提高新能源消纳率，降低用户度电成本</p>
+                    <a href="#products" class="btn btn-primary">了解更多 +</a>
+                </div>
+                <div class="slide-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
             </div>
         </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-number">10+</span>
-                <span class="stat-label">年行业经验</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">项目案例</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">99%</span>
-                <span class="stat-label">客户满意度</span>
-            </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </section>
 
-    <!-- 产品中心 -->
-    <section id="products" class="products">
+    <!-- 产品分类 -->
+    <section class="products-category">
         <div class="container">
             <div class="section-header">
-                <h2>核心产品</h2>
-                <p>自主研发，品质保证，为储能系统提供全方位技术支持</p>
+                <h2>产品中心</h2>
+                <p>Products Center</p>
+                <div class="section-line"></div>
             </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-icon">🔋</div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🔋</div>
                     <h3>BMS 电池管理系统</h3>
-                    <p>高精度电池监控与智能均衡管理，支持串并联电池组，具备过充/过放/过流/温度保护功能</p>
-                    <ul class="product-features">
-                        <li>✓ 电压采集精度±1mV</li>
-                        <li>✓ 支持 1-32 串锂电池</li>
-                        <li>✓ 主动/被动均衡可选</li>
-                        <li>✓ CAN/RS485 通讯接口</li>
+                    <p>高精度电池监控与智能均衡管理</p>
+                    <ul class="product-list">
+                        <li>• 电压采集精度±1mV</li>
+                        <li>• 支持 1-32 串锂电池</li>
+                        <li>• 主动/被动均衡可选</li>
+                        <li>• CAN/RS485 通讯</li>
                     </ul>
-                    <a href="#contact" class="btn-link">咨询详情 →</a>
+                    <a href="#contact" class="btn-link">查看详情 →</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">⚡</div>
+                <div class="category-card">
+                    <div class="category-icon">⚡</div>
                     <h3>EMS 能量管理系统</h3>
-                    <p>智能能源调度与优化控制，实现削峰填谷、需量管理、需量预测等功能，提升系统经济性</p>
-                    <ul class="product-features">
-                        <li>✓ 实时功率控制</li>
-                        <li>✓ 负荷预测算法</li>
-                        <li>✓ 多策略运行模式</li>
-                        <li>✓ 云端数据同步</li>
+                    <p>智能能源调度与优化控制</p>
+                    <ul class="product-list">
+                        <li>• 实时功率控制</li>
+                        <li>• 负荷预测算法</li>
+                        <li>• 多策略运行模式</li>
+                        <li>• 云端数据同步</li>
                     </ul>
-                    <a href="#contact" class="btn-link">咨询详情 →</a>
+                    <a href="#contact" class="btn-link">查看详情 →</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">🖥️</div>
+                <div class="category-card">
+                    <div class="category-icon">🖥️</div>
                     <h3>能源管理平台</h3>
-                    <p>一站式能源监控与分析平台，支持多站点管理、数据可视化、告警通知、报表生成</p>
-                    <ul class="product-features">
-                        <li>✓ 实时监控大屏</li>
-                        <li>✓ 多维度数据分析</li>
-                        <li>✓ 智能告警推送</li>
-                        <li>✓ 定制化报表输出</li>
+                    <p>一站式能源监控与分析平台</p>
+                    <ul class="product-list">
+                        <li>• 实时监控大屏</li>
+                        <li>• 多维度数据分析</li>
+                        <li>• 智能告警推送</li>
+                        <li>• 定制化报表</li>
                     </ul>
-                    <a href="#contact" class="btn-link">咨询详情 →</a>
+                    <a href="#contact" class="btn-link">查看详情 →</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">🏭</div>
+                <div class="category-card">
+                    <div class="category-icon">🏭</div>
                     <h3>工商业储能柜</h3>
-                    <p>集成化储能系统，即插即用，适用于工厂、商场、数据中心等场景，降低用电成本</p>
-                    <ul class="product-features">
-                        <li>✓ 模块化设计</li>
-                        <li>✓ 智能温控系统</li>
-                        <li>✓ 多重安全防护</li>
-                        <li>✓ 10 年 + 使用寿命</li>
+                    <p>集成化储能系统，即插即用</p>
+                    <ul class="product-list">
+                        <li>• 模块化设计</li>
+                        <li>• 智能温控系统</li>
+                        <li>• 多重安全防护</li>
+                        <li>• 10 年 + 使用寿命</li>
                     </ul>
-                    <a href="#contact" class="btn-link">咨询详情 →</a>
+                    <a href="#contact" class="btn-link">查看详情 →</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">🔌</div>
+                <div class="category-card">
+                    <div class="category-icon">🔌</div>
                     <h3>PCS 储能变流器</h3>
-                    <p>双向 AC/DC 变换器，实现电池与电网之间的能量转换，支持并网/离网双模式运行</p>
-                    <ul class="product-features">
-                        <li>✓ 高效率转换≥98%</li>
-                        <li>✓ 宽电压范围</li>
-                        <li>✓ 低谐波失真</li>
-                        <li>✓ 支持并联扩容</li>
+                    <p>双向 AC/DC 变换器</p>
+                    <ul class="product-list">
+                        <li>• 高效率≥98%</li>
+                        <li>• 宽电压范围</li>
+                        <li>• 低谐波失真</li>
+                        <li>• 支持并联扩容</li>
                     </ul>
-                    <a href="#contact" class="btn-link">咨询详情 →</a>
+                    <a href="#contact" class="btn-link">查看详情 →</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">📊</div>
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
                     <h3>储能监控系统</h3>
-                    <p>全方位储能电站监控，支持数据采集、状态监测、故障诊断、远程运维</p>
-                    <ul class="product-features">
-                        <li>✓ 毫秒级数据采集</li>
-                        <li>✓ 故障预判告警</li>
-                        <li>✓ 远程 OTA 升级</li>
-                        <li>✓ 移动端 APP 支持</li>
+                    <p>全方位储能电站监控</p>
+                    <ul class="product-list">
+                        <li>• 毫秒级数据采集</li>
+                        <li>• 故障预判告警</li>
+                        <li>• 远程 OTA 升级</li>
+                        <li>• 移动端 APP</li>
                     </ul>
-                    <a href="#contact" class="btn-link">咨询详情 →</a>
+                    <a href="#contact" class="btn-link">查看详情 →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 解决方案 -->
-    <section id="solutions" class="solutions">
+    <section class="solutions-section">
         <div class="container">
             <div class="section-header">
                 <h2>解决方案</h2>
-                <p>针对不同行业场景，提供定制化储能解决方案</p>
+                <p>Solutions</p>
+                <div class="section-line"></div>
             </div>
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <h3>🏭 工商业储能</h3>
-                    <p>为工厂、商场、园区提供削峰填谷、需量管理解决方案，降低用电成本 30% 以上</p>
-                    <ul>
-                        <li>• 峰谷套利优化</li>
-                        <li>• 需量控制管理</li>
-                        <li>• 应急备用电源</li>
-                    </ul>
+            <div class="solutions-showcase">
+                <div class="solution-item">
+                    <div class="solution-image" style="background: linear-gradient(135deg, #1a56db 0%, #0e7490 100%);">
+                        <span class="solution-icon">🏭</span>
+                    </div>
+                    <div class="solution-content">
+                        <h3>工商业储能解决方案</h3>
+                        <p>为工厂、商场、园区提供削峰填谷、需量管理解决方案，降低用电成本 30% 以上</p>
+                        <ul>
+                            <li>✓ 峰谷套利优化</li>
+                            <li>✓ 需量控制管理</li>
+                            <li>✓ 应急备用电源</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">了解更多 +</a>
+                    </div>
                 </div>
-                <div class="solution-card">
-                    <h3>☀️ 光储一体化</h3>
-                    <p>光伏发电 + 储能系统协同运行，提升新能源消纳率，实现能源自给自足</p>
-                    <ul>
-                        <li>• 光伏功率预测</li>
-                        <li>• 平滑输出控制</li>
-                        <li>• 离网运行支持</li>
-                    </ul>
+                <div class="solution-item">
+                    <div class="solution-image" style="background: linear-gradient(135deg, #f59e0b 0%, #dc2626 100%);">
+                        <span class="solution-icon">☀️</span>
+                    </div>
+                    <div class="solution-content">
+                        <h3>光储一体化解决方案</h3>
+                        <p>光伏发电 + 储能系统协同运行，提升新能源消纳率，实现能源自给自足</p>
+                        <ul>
+                            <li>✓ 光伏功率预测</li>
+                            <li>✓ 平滑输出控制</li>
+                            <li>✓ 离网运行支持</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">了解更多 +</a>
+                    </div>
                 </div>
-                <div class="solution-card">
-                    <h3>🔋 用户侧储能</h3>
-                    <p>为数据中心、医院、学校等重要负荷提供备用电源保障，提升供电可靠性</p>
-                    <ul>
-                        <li>• UPS 不间断供电</li>
-                        <li>• 电能质量治理</li>
-                        <li>• 黑启动能力</li>
-                    </ul>
+                <div class="solution-item">
+                    <div class="solution-image" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                        <span class="solution-icon">🔋</span>
+                    </div>
+                    <div class="solution-content">
+                        <h3>用户侧储能解决方案</h3>
+                        <p>为数据中心、医院、学校等重要负荷提供备用电源保障，提升供电可靠性</p>
+                        <ul>
+                            <li>✓ UPS 不间断供电</li>
+                            <li>✓ 电能质量治理</li>
+                            <li>✓ 黑启动能力</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">了解更多 +</a>
+                    </div>
                 </div>
-                <div class="solution-card">
-                    <h3>🌐 微电网系统</h3>
-                    <p>构建源网荷储一体化微电网，实现区域能源自平衡，支持并网/离网无缝切换</p>
-                    <ul>
-                        <li>• 多能互补协调</li>
-                        <li>• 孤岛检测保护</li>
-                        <li>• 能量优化调度</li>
-                    </ul>
+                <div class="solution-item">
+                    <div class="solution-image" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                        <span class="solution-icon">🌐</span>
+                    </div>
+                    <div class="solution-content">
+                        <h3>微电网系统解决方案</h3>
+                        <p>构建源网荷储一体化微电网，实现区域能源自平衡，支持并网/离网无缝切换</p>
+                        <ul>
+                            <li>✓ 多能互补协调</li>
+                            <li>✓ 孤岛检测保护</li>
+                            <li>✓ 能量优化调度</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">了解更多 +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工程案例 -->
+    <section id="cases" class="cases-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>工程案例</h2>
+                <p>Engineering Cases</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-image">
+                        <span class="case-placeholder">🏭</span>
+                    </div>
+                    <div class="case-content">
+                        <h4>某工业园区储能项目</h4>
+                        <p>2MWh 工商业储能系统，年节省电费 150 万元</p>
+                        <span class="case-tag">工商业储能</span>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <span class="case-placeholder">☀️</span>
+                    </div>
+                    <div class="case-content">
+                        <h4>某商业中心光储项目</h4>
+                        <p>500kW 光伏 +1MWh 储能，实现能源自给率 60%</p>
+                        <span class="case-tag">光储一体</span>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <span class="case-placeholder">🏥</span>
+                    </div>
+                    <div class="case-content">
+                        <h4>某医院备用电源项目</h4>
+                        <p>1MW 储能 UPS 系统，保障关键负荷供电</p>
+                        <span class="case-tag">用户侧储能</span>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-image">
+                        <span class="case-placeholder">🌐</span>
+                    </div>
+                    <div class="case-content">
+                        <h4>某岛屿微电网项目</h4>
+                        <p>风光储柴微电网，实现 100% 可再生能源供电</p>
+                        <span class="case-tag">微电网</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 关于我们 -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="section-header">
                 <h2>关于我们</h2>
-                <p>深圳市英能聚科技有限公司</p>
+                <p>About Us</p>
+                <div class="section-line"></div>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>深圳市英能聚科技有限公司是一家专注于储能系统研发、生产和销售的高新技术企业。公司核心团队拥有 10 年以上储能行业经验，致力于为客户提供安全、高效、智能的储能解决方案。</p>
-                    <p>公司主营产品包括 BMS 电池管理系统、EMS 能量管理系统、能源管理平台、工商业储能柜等，广泛应用于工商业储能、光储一体化、用户侧储能、微电网等领域。</p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-number">10+</span>
-                            <span class="highlight-label">年行业经验</span>
+                    <p class="about-intro">深圳市英能聚科技有限公司是一家专注于储能系统研发、生产和销售的高新技术企业。</p>
+                    <p>公司核心团队拥有 10 年以上储能行业经验，致力于为客户提供安全、高效、智能的储能解决方案。主营产品包括 BMS 电池管理系统、EMS 能量管理系统、能源管理平台、工商业储能柜等，广泛应用于工商业储能、光储一体化、用户侧储能、微电网等领域。</p>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">年行业经验</span>
                         </div>
-                        <div class="highlight-item">
-                            <span class="highlight-number">50+</span>
-                            <span class="highlight-label">技术专利</span>
+                        <div class="stat-box">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">技术专利</span>
                         </div>
-                        <div class="highlight-item">
-                            <span class="highlight-number">500+</span>
-                            <span class="highlight-label">项目案例</span>
+                        <div class="stat-box">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">项目案例</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">客户满意度</span>
                         </div>
                     </div>
                 </div>
@@ -221,13 +324,14 @@
     </section>
 
     <!-- 联系我们 -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
                 <h2>联系我们</h2>
-                <p>期待与您的合作，欢迎咨询洽谈</p>
+                <p>Contact Us</p>
+                <div class="section-line"></div>
             </div>
-            <div class="contact-content">
+            <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="contact-item">
                         <span class="contact-icon">👤</span>
@@ -246,7 +350,7 @@
                     <div class="contact-item">
                         <span class="contact-icon">📍</span>
                         <div>
-                            <h4>地址</h4>
+                            <h4>公司地址</h4>
                             <p>深圳市</p>
                         </div>
                     </div>
@@ -260,11 +364,16 @@
                 </div>
                 <div class="contact-form">
                     <form>
-                        <input type="text" placeholder="您的姓名" required>
-                        <input type="email" placeholder="您的邮箱" required>
-                        <input type="tel" placeholder="联系电话">
-                        <textarea placeholder="咨询内容" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">提交咨询</button>
+                        <div class="form-row">
+                            <input type="text" placeholder="您的姓名 *" required>
+                            <input type="text" placeholder="公司名称">
+                        </div>
+                        <div class="form-row">
+                            <input type="email" placeholder="邮箱地址 *" required>
+                            <input type="tel" placeholder="联系电话 *">
+                        </div>
+                        <textarea placeholder="咨询内容 *" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-block">提交咨询</button>
                     </form>
                 </div>
             </div>
@@ -274,27 +383,48 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-top">
                 <div class="footer-section">
-                    <h4>英能聚科技</h4>
-                    <p>专注储能系统解决方案</p>
+                    <h4>产品中心</h4>
+                    <ul>
+                        <li><a href="#products">BMS 电池管理系统</a></li>
+                        <li><a href="#products">EMS 能量管理系统</a></li>
+                        <li><a href="#products">能源管理平台</a></li>
+                        <li><a href="#products">工商业储能柜</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>解决方案</h4>
+                    <ul>
+                        <li><a href="#solutions">工商业储能</a></li>
+                        <li><a href="#solutions">光储一体化</a></li>
+                        <li><a href="#solutions">用户侧储能</a></li>
+                        <li><a href="#solutions">微电网系统</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
                         <li><a href="#home">首页</a></li>
-                        <li><a href="#products">产品中心</a></li>
-                        <li><a href="#solutions">解决方案</a></li>
+                        <li><a href="#cases">工程案例</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#contact">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>联系我们</h4>
-                    <p>邮箱：elgyc@elgyc.com</p>
-                    <p>地址：深圳市</p>
+                    <ul>
+                        <li>📧 elgyc@elgyc.com</li>
+                        <li>📍 深圳市</li>
+                        <li>🕐 周一至周五 9:00-18:00</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 深圳市英能聚科技有限公司 版权所有</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 深圳市英能聚科技有限公司 版权所有</p>
+                    <p>地址：深圳市 &nbsp;&nbsp;|&nbsp;&nbsp; 邮箱：elgyc@elgyc.com</p>
+                </div>
             </div>
         </div>
     </footer>
